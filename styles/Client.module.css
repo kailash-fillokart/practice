@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Farsan&family=Open+Sans&family=PT+Sans&family=Poppins:wght@400;500&family=Roboto&family=Roboto+Condensed&display=swap');
+
+.client_container {
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1300px;
+    /* margin: 0 20px; */
+    justify-self: center;
+    margin-top: 5rem;
+}
+
+/* .logo_container {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    background-color: rgba(255, 255, 255);
+    border-radius: 25px;
+} */
+
+
+
+
+
+/* 
+.logo_container::-webkit-scrollbar {
+    display: none;
+} */
+
+/* .logo {
+    padding: 2% 1%;
+    scroll-snap-align: start;
+} */
+
+/* .logo_container .logo {
+    padding: 2% 1%;
+    animation: moveSlideshow 2s linear infinite;
+} */
+
+/* @keyframes moveSlideshow {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.logo img {
+    width: 129px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+} */
+
+
+
+.clientslogo {
+    display: flex;
+    width: 100%;
+    user-select: none;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255);
+    border-radius: 25px;
+    position: relative;
+}
+
+
+
+.logo_container {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    /* overflow-x: auto; */
+    gap: 20px;
+    /* overflow: hidden; */
+    width: auto;
+    animation: scrollX 60s linear infinite;
+}
+
+/* 
+.clientslogo::before,
+.clientslogo::after {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.clientslogo::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.clientslogo::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+} */
+
+.logo {
+    display: grid;
+    place-items: center;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+.logo img {
+    width: 129px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+@keyframes scrollX {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media screen and (250px <=width <=340px) {
+    .logo_container {
+        padding: 20px 0px;
+    }
+
+    .logo img {
+        width: 95px;
+    }
+
+
+    .logo {
+        padding: 0.3%;
+    }
+}
+
+@media screen and (340px <=width <=450px) {
+    .logo_container {
+        padding: 20px 0px;
+    }
+
+    .logo img {
+        width: 125px;
+        aspect-ratio: 3/2;
+    }
+
+    .logo {
+        padding: 0.3%;
+    }
+}
+
+@media screen and (width >=1100px) {
+    .logo img {
+        width: 144px;
+        aspect-ratio: 3/2;
+    }
+}

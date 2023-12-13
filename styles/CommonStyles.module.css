@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Farsan&family=Open+Sans&family=PT+Sans&family=Poppins:wght@400;500&family=Roboto&family=Roboto+Condensed&display=swap');
+
+.title {
+    display: grid;
+    justify-content: center;
+    justify-items: center
+}
+
+.title h1 {
+    text-align: center;
+    color: #93D8FF;
+    font-size: 3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    padding: 2% 0;
+    margin-bottom: 0;
+}
+
+.title p {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-align: center;
+    color: #93D8FF;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.socialicon {
+    transition: transform .3s;
+}
+
+.socialicon:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+@media screen and (250px <=width < 400px) {
+
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .title p {
+        font-size: 0.9rem;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (400px <=width < 550px) {
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .title p {
+        font-size: 1rem;
+    }
+
+    .sf_des h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (550px <=width <=700px) {
+    .title h1 {
+        font-size: 2.2rem;
+    }
+
+    .title p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (700px <=width <=800px) {
+    .title h1 {
+        font-size: 2.4rem;
+    }
+
+    .title p {
+        font-size: 1.2rem;
+    }
+}
+
+.svg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 2%; */
+}

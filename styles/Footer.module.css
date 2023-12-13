@@ -1,0 +1,41 @@
+.text {
+    color: #f1f1f1;
+    text-align: left;
+    font-size: 16px;
+}
+
+.text2 {
+    color: #f1f1f1;
+    text-align: left;
+    font-size: 16px;
+}
+
+.logotext {
+    margin-bottom: 40px;
+}
+.links{
+    transition: .2s;
+}
+.links:hover{
+    color: #f1f1f1;
+    transform: translate(5px);
+}
+
+
+@media screen and (max-width: 800px) {
+    .text {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .text2 {
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media screen and (250px <=width <=500px) {
+    .logotext {
+        margin-bottom: 10px;
+    }
+}

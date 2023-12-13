@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Farsan&family=Open+Sans&family=PT+Sans&family=Poppins:wght@400;500&family=Roboto&family=Roboto+Condensed&display=swap');
+
+.card_container {
+
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    justify-self: center;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.card_container::-webkit-scrollbar {
+    display: none;
+}
+
+.product {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    object-fit: contain;
+    max-width: 270px;
+    min-width: 270px;
+    margin-right: 10px;
+    text-align: left;
+    padding: 7px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #93D8FF;
+    color: #f1f1f1;
+    border-radius: 20px;
+}
+
+.title {
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    text-align: justify;
+}
+
+.product_thumb img {
+    width: 200px;
+    height: auto;
+}
+
+.title h4 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
+}
+
+.title p span {
+    color: #47D247;
+    font-size: medium;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+}
+
+@media screen and (width < 400px) {
+
+    .card_container {
+        padding-right: 10%;
+        justify-self: flex-start;
+        margin-left: 20px;
+    }
+
+    .product {
+        min-width: 230px;
+    }
+
+    .product_thumb img {
+        width: 158px;
+    }
+
+    .title h4 {
+        font-size: 1rem;
+    }
+
+    .title p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (400px <=width < 900px) {
+
+    .card_container {
+        justify-self: flex-start;
+    }
+}
